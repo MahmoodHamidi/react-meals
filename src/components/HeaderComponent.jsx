@@ -1,7 +1,15 @@
-import React from "react";
+import { NavLink, Link } from "react-router-dom";
 
 const HeaderComponent = () => {
-  return <div>HeaderComponent</div>;
+  return (
+    <>
+      <nav>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/meals">Meals</NavLink>
+      </nav>
+    </>
+  );
 };
 
 export default HeaderComponent;
