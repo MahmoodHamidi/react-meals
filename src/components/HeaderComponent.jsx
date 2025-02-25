@@ -47,7 +47,7 @@ const HeaderComponent = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
-            Jahed Laser
+            Meals
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
