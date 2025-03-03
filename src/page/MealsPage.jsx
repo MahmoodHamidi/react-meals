@@ -12,7 +12,9 @@ const MealsPage = () => {
     async function fetchMeals() {
       try {
         const data = await fetchData(mealsUrl);
+
         console.log("From API", data.meals);
+
         setMeals(data.meals);
       } catch (error) {
         console.error(error.message);
@@ -27,7 +29,7 @@ const MealsPage = () => {
       {meals.length > 0 ? (
         meals.map((food) => (
           <>
-            <CardItemComponent food={food} />
+            <CardItemComponent key={food.idMeal} food={food} />
           </>
         ))
       ) : (

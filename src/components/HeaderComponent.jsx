@@ -31,15 +31,7 @@ const HeaderComponent = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <NavLink to="/about">Über Uns</NavLink>
               </li>
               <li>
                 <NavLink to="/meals">Meals</NavLink>
@@ -47,7 +39,7 @@ const HeaderComponent = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
-            Meals
+            RMeals
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -56,7 +48,7 @@ const HeaderComponent = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about">Über Uns</NavLink>
             </li>
             <li>
               <NavLink to="/meals">Meals</NavLink>
@@ -70,5 +62,4 @@ const HeaderComponent = () => {
     </>
   );
 };
-
 export default HeaderComponent;

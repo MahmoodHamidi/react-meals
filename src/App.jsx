@@ -16,6 +16,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/meals" element={<MealsPage />} />
             {/*- TODO :Route mit Parameter Einstellung */}
+            <Route path="/meals/:id" element={<MealsDetailsPage />} />
 
             {/* Wildcard sign (*) */}
             <Route path="*" element={<NotFoundPage />} />
