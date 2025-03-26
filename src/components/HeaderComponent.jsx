@@ -1,6 +1,11 @@
 import { NavLink, Link } from "react-router-dom";
+import { useContext } from "react";
+import { DarkModeContext } from "../context/DarkModeContext";
 
 const HeaderComponent = () => {
+  const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
+
+  const activeStyle = ({ isActive }) => (isActive ? "text-yellow-400" : "");
   return (
     <>
       <div className="navbar bg-base-100 shadow-sm">
@@ -55,8 +60,11 @@ const HeaderComponent = () => {
             </li>
           </ul>
         </div>
+
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <button onClick={toggleDarkMode} className="btn">
+            {isDarkMode ? "🌞" : "🌜"}
+          </button>
         </div>
       </div>
     </>
