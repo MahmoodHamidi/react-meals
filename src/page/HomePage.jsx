@@ -3,7 +3,7 @@ const HomePage = () => {
     <div
       className="hero min-h-screen"
       style={{
-        backgroundImage: "url(src/assets/images/breakfast.jpg)",
+        backgroundImage: "url(./src/assets/images/breakfast.jpg)",
       }}
     >
       <div className="hero-overlay"></div>
